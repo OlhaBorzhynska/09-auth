@@ -2,17 +2,6 @@ import { NewNote, Note } from "@/types/note";
 import { nextServer } from "./api";
 import { User } from "@/types/user";
 
-// fetchNotes;
-// fetchNoteById;
-// createNote;
-// deleteNote;
-// register;
-// login;
-// logout;
-// checkSession;
-// getMe;
-// updateMe;
-
 export interface NotesResponse {
   notes: Note[];
   totalPages: number;
@@ -22,6 +11,10 @@ export interface RegisterRequest {
   email: string;
   password: string;
 }
+
+type CheckSessionRequest = {
+  success: boolean;
+};
 
 export async function fetchNotes(
   searchQuery: string,
@@ -57,3 +50,18 @@ export async function register(userData: RegisterRequest): Promise<User> {
   const { data } = await nextServer.post<User>(`/auth/register`, userData);
   return data;
 }
+
+export async function login(userData: RegisterRequest): Promise<User> {
+  const { data } = await nextServer.post<User>(`/auth/login`, userData);
+  return data;
+}
+
+export const checkSession = async () => {
+  const { data } = await nextServer.get<CheckSessionRequest>("/auth/session");
+  return data.success;
+};
+
+export const getMe = async () => {
+  const { data } = await nextServer.get<User>("/users/me");
+  return data;
+};

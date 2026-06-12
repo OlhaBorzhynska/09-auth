@@ -6,11 +6,6 @@ export interface NotesResponse {
   totalPages: number;
 }
 
-// fetchNotes
-// fetchNoteById
-// getMe
-// checkSession
-
 export async function fetchNotes(
   searchQuery: string,
   currentPage: number,
