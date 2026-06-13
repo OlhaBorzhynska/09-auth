@@ -5,10 +5,12 @@ import css from "./SignInPage.module.css";
 import { useState } from "react";
 import { login, RegisterRequest } from "@/lib/api/clientApi";
 import { ApiError } from "next/dist/server/api-utils";
+import { useAuthStore } from "@/lib/store/authStore";
 
 export default function SignIn() {
   const router = useRouter();
   const [error, setError] = useState("");
+  const setUser = useAuthStore((state) => state.setUser);
 
   async function handleLogin(formData: FormData) {
     try {
@@ -18,6 +20,7 @@ export default function SignIn() {
       };
       const res = await login(values);
       if (res) {
+        setUser(res);
         router.push("/profile");
       } else {
         setError("Invalid email or password");

@@ -16,6 +16,11 @@ type CheckSessionRequest = {
   success: boolean;
 };
 
+export type UpdateUserRequest = {
+  userName?: string;
+  photoUrl?: string;
+};
+
 export async function fetchNotes(
   searchQuery: string,
   currentPage: number,
@@ -64,4 +69,13 @@ export const checkSession = async () => {
 export const getMe = async () => {
   const { data } = await nextServer.get<User>("/users/me");
   return data;
+};
+
+export const logout = async (): Promise<void> => {
+  await nextServer.post("/auth/logout");
+};
+
+export const updateMe = async (payload: UpdateUserRequest) => {
+  const res = await nextServer.put<User>("/users/me", payload);
+  return res.data;
 };
