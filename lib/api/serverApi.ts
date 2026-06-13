@@ -24,6 +24,7 @@ export async function fetchNotes(
 }
 
 export async function fetchNoteById(noteId: string): Promise<Note> {
+  const cookieStore = await cookies();
   const { data } = await nextServer.get<Note>(`/notes/${noteId}`, {
     headers: {
       Cookie: cookieStore.toString(),
