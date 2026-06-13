@@ -22,7 +22,6 @@ export default function EditProfile() {
     event.preventDefault();
     const updatedUser = await updateMe({
       username: username,
-      email: user.email,
     });
 
     setUser(updatedUser);
@@ -46,11 +45,11 @@ export default function EditProfile() {
 
           <form className={css.profileInfo} onSubmit={handleSaveUser}>
             <div className={css.usernameWrapper}>
-              <label htmlFor="username">`Username:{user.username}`</label>
+              <label htmlFor="username">`Username:`</label>
               <input
                 id="username"
                 type="text"
-                defaultValue={username}
+                value={username}
                 className={css.input}
                 onChange={handleChange}
               />

@@ -18,7 +18,6 @@ type CheckSessionRequest = {
 
 export type UpdateUserRequest = {
   username?: string;
-  email: string;
 };
 
 export async function fetchNotes(
@@ -61,7 +60,7 @@ export async function login(userData: RegisterRequest): Promise<User> {
   return data;
 }
 
-export const checkSession = async () => {
+export const checkSession = async (): Promise<boolean> => {
   const { data } = await nextServer.get<CheckSessionRequest>("/auth/session");
   return data.success;
 };

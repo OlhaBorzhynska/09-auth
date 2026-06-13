@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 
 import { isAxiosError } from "axios";
-import { logErrorResponse } from "../../_utils/_utils";
+import { logErrorResponse } from "../../_utils/utils";
 import { api } from "../../api";
 
 type Props = {
