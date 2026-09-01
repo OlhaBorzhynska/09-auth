@@ -1,4 +1,4 @@
-# 📝 NoteHub — Простір для ваших ідей
+# 📝 NoteHub — A Space for Your Ideas
 
 <p align="center">
   <img src="public/NoteHub-next-preview.png" alt="NoteHub preview" width="100%">
@@ -6,37 +6,36 @@
 
 ---
 
-## 🎯 Про проєкт
+## 🎯 About the Project
 
-📄 **Live Page:**
-[Переглянути проєкт](https://09-auth-three-snowy.vercel.app/)
+📄 **Live Page:** [View Project](https://09-auth-three-snowy.vercel.app/)
 
-**NoteHub** — це сучасний вебзастосунок для створення, перегляду та керування особистими нотатками. Проєкт розроблений із використанням Next.js та TypeScript і демонструє роботу з автентифікацією користувачів, захищеними маршрутами, глобальним станом та взаємодією з REST API.
-
----
-
-## 🚀 Ключові можливості (Features)
-
-- Реєстрація та авторизація користувачів
-- Автоматичне оновлення сесії
-- Захищені сторінки для авторизованих користувачів
-- Створення нових нотаток
-- Перегляд списку нотаток
-- Пошук нотаток за ключовими словами
-- Пагінація для зручної навігації між записами
-- Перегляд детальної інформації про нотатку
-- Редагування профілю користувача
-- Завантаження та оновлення аватара
-- Валідація форм та обробка помилок
-- Адаптивний інтерфейс для різних пристроїв
+**NoteHub** — is a modern web application for creating, viewing, and managing personal notes. The project was developed using Next.js and TypeScript and demonstrates working with user authentication, protected routes, global state management, and REST API integration.
 
 ---
 
-## 🛠 Використані технології
+## 🚀 Features
+
+- User registration and authentication
+- Automatic session refresh
+- Protected pages for authenticated users
+- Creating new notes
+- Viewing a list of notes
+- Searching notes by keywords
+- Pagination for convenient navigation between records
+- Viewing detailed note information
+- Editing user profile
+- Uploading and updating an avatar
+- Form validation and error handling
+- Responsive interface for different devices 
+
+---
+
+## 🛠 Technologies Used
 
 [![My Skills](https://skillicons.dev/icons?i=react,nextjs,js,html,css,github,vite,figma,vercel,vscode&theme=light)](https://skillicons.dev)
 
-| Використані технології та бібліотеки      | 
+| Technologies and Libraries Used     | 
 | :---------------------------------------- | 
 | **Next.js** | 
 | **React** | 
@@ -48,52 +47,52 @@
 | **REST API**     |
 | **JWT** | 
 | **Cookies** | 
-| **Middleware для захисту маршрутів** |
+| **Middleware for route protection** |
 
 ---
 
-## 📂 Структура функціоналу
+## 📂 Features Overview
 
-- **Авторизація:** Користувач може створити обліковий запис, увійти в систему та безпечно працювати зі своїми даними. Для збереження сесії використовуються JWT-токени та cookies.
-- **Управління нотатками:** Після входу користувач отримує доступ до власних нотаток, може створювати нові записи, переглядати існуючі, виконувати пошук та працювати зі сторінками результатів.
-- **Профіль користувача:** Передбачена можливість редагування особистих даних та зміни аватара.
-
----
-
-## 📚 Отримані навички
-
-Під час розробки проєкту були відпрацьовані:
-
-- Робота з App Router у Next.js
-- Реалізація автентифікації та авторизації
-- Захист приватних маршрутів через Middleware
-- Керування глобальним станом за допомогою Zustand
-- Робота з серверним та клієнтським рендерингом
-- Інтеграція з REST API через Axios
-- Кешування та синхронізація даних через React Query
-- Типізація застосунку за допомогою TypeScript
-
-## 🎯 Мета проєкту
-
-Створити повноцінний застосунок для керування нотатками з сучасною архітектурою, безпечною системою автентифікації та зручним користувацьким інтерфейсом, використовуючи актуальні інструменти екосистеми React та Next.js.
+- **Authentication:** Users can create an account, log in, and securely work with their data. JWT tokens and cookies are used to maintain the user session.
+- **Note Management:** After logging in, users have access to their personal notes and can create new notes, view existing ones, search notes, and navigate through result pages.
+- **User Profile:** Users can edit their personal information and change their avatar.
 
 ---
 
-## ⚙️ Як запустити проєкт локально
+## 📚 Skills Acquired
 
-**Клонувати репозиторій:**
+During the development of the project, I gained practical experience in:
+
+- Working with the App Router in Next.js
+- Implementing authentication and authorization
+- Protecting private routes using Middleware
+- Managing global state with Zustand
+- Working with server-side and client-side rendering
+- Integrating REST API using Axios
+- Caching and synchronizing data using React Query
+- TypeScript application type safety
+
+## 🎯 Project Goal 
+
+To create a full-featured note management application with a modern architecture, secure authentication system, and convenient user interface using up-to-date tools from the React and Next.js ecosystem.
+
+---
+
+## ⚙️ How to Run the Project Locally
+
+**Clone the repository:**
 
 ```bash
 git clone https://github.com/OlhaBorzhynska/09-auth.git
 ```
 
-**Встановити залежності:**
+**Install dependencies:**
 
 ```bash
 npm install
 ```
 
-**Запустити режим розробки:**
+**Run the development mode:**
 
 ```bash
 npm run dev
