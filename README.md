@@ -10,7 +10,9 @@
 
 📄 **Live Page:** [View Project](https://09-auth-three-snowy.vercel.app/)
 
-**NoteHub** — is a modern web application for creating, viewing, and managing personal notes. The project was developed using Next.js and TypeScript and demonstrates working with user authentication, protected routes, global state management, and REST API integration.
+**NoteHub** is a modern web application for creating, viewing, and managing personal notes.
+
+The project was developed using Next.js and TypeScript and demonstrates practical experience with user authentication, protected routes, global state management, and REST API integration.
 
 ---
 
@@ -18,16 +20,15 @@
 
 - User registration and authentication
 - Automatic session refresh
-- Protected pages for authenticated users
+- Protected routes for authenticated users
 - Creating new notes
 - Viewing a list of notes
 - Searching notes by keywords
-- Pagination for convenient navigation between records
+- Pagination for convenient navigation through notes
 - Viewing detailed note information
-- Editing user profile
+- Editing user profile information
 - Uploading and updating an avatar
 - Form validation and error handling
-- Responsive interface for different devices 
 
 ---
 
@@ -47,15 +48,15 @@
 | **REST API**     |
 | **JWT** | 
 | **Cookies** | 
-| **Middleware for route protection** |
+| **Next.js Middleware** |
 
 ---
 
 ## 📂 Features Overview
 
-- **Authentication:** Users can create an account, log in, and securely work with their data. JWT tokens and cookies are used to maintain the user session.
-- **Note Management:** After logging in, users have access to their personal notes and can create new notes, view existing ones, search notes, and navigate through result pages.
-- **User Profile:** Users can edit their personal information and change their avatar.
+- **Authentication:** Users can create an account, log in, and securely access their personal data. JWT-based authentication and cookies are used to maintain the user session.
+- **Note Management:** Authenticated users can access their personal notes, create new notes, view existing ones, search by keywords, and navigate through paginated results.
+- **User Profile:** Users can edit their personal information and upload or update their avatar.
 
 ---
 
@@ -65,16 +66,19 @@ During the development of the project, I gained practical experience in:
 
 - Working with the App Router in Next.js
 - Implementing authentication and authorization
-- Protecting private routes using Middleware
+- Protecting private routes using Next.js Middleware
 - Managing global state with Zustand
 - Working with server-side and client-side rendering
-- Integrating REST API using Axios
-- Caching and synchronizing data using React Query
-- TypeScript application type safety
+- Integrating a REST API using Axios
+- Caching and synchronizing server data with TanStack Query
+- Working with JWT-based authentication and cookies
+- Building type-safe applications with TypeScript
+
+---
 
 ## 🎯 Project Goal 
 
-To create a full-featured note management application with a modern architecture, secure authentication system, and convenient user interface using up-to-date tools from the React and Next.js ecosystem.
+The main goal of the project was to build a full-featured note management application while gaining practical experience with modern Next.js architecture, authentication, API integration, and state management.
 
 ---
 
@@ -92,7 +96,7 @@ git clone https://github.com/OlhaBorzhynska/09-auth.git
 npm install
 ```
 
-**Run the development mode:**
+**Start the development server:**
 
 ```bash
 npm run dev
