@@ -32,7 +32,7 @@ The project was developed using Next.js and TypeScript and demonstrates practica
 
 ---
 
-## 🛠 Technologies Used
+## 🛠 Tech Stack
 
 [![My Skills](https://skillicons.dev/icons?i=react,nextjs,js,html,css,github,vite,figma,vercel,vscode&theme=light)](https://skillicons.dev)
 
